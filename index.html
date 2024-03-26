@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+    <nav>
+        <span class="tytl">Weather Forecast</span>
+    </nav>
+    <div class="full">
+
+
+        <div class="day">Monday</div>
+        <div class="date">Date</div>
+        <div class="image">
+            <img id="weat" src="https://cdn.weatherapi.com/weather/64x64/night/143.png" alt="Image">
+        </div>
+        <div class="temp">25 C</div>
+        <div class="cond">Clear</div>
+        <div class="location">
+            <span class="material-symbols-outlined">
+                pin_drop
+                </span>
+            <span id="loc">Location</span>
+
+        </div>
+        <div class="coll">
+            <div class="c"> <span class="head">Feels Like</span>
+                <span id="feels"><span class="ref"></span></span>
+            </div>
+            <div class="c"> <span class="head">Humidity</span>
+                <span id="hum"></span>
+            </div>
+        </div>
+        <span class="ref"></span>
+        <div class="con">
+            <input id="change" type="text" placeholder="Enter Location"> <button id="btn">Change</button>
+        </div>
+    </div>
+<div class="cont2">
+    <div id="todaye" class="cards">
+        <div class="date1">Today</div>
+        <div class="imag1"><img class="imag1data" src="https://cdn.weatherapi.com/weather/64x64/night/143.png" alt=""></div>
+        <div class="txt">Clear</div>
+        <div class="tmp1">Temp</div>
+    </div>
+    <div class="cards">
+        <div class="date1">Tomorrow</div>
+        <div class="imag1"><img class="imag1data" src="https://cdn.weatherapi.com/weather/64x64/night/143.png" alt=""></div>
+        <div class="txt">Clear</div>
+        <div class="tmp1">Temp</div>
+    </div>
+    <div class="cards">
+        <div class="date1">Day 3</div>
+        <div class="imag1"><img class="imag1data" src="https://cdn.weatherapi.com/weather/64x64/night/143.png" alt=""></div>
+        <div class="txt">Clear</div>
+        <div class="tmp1">Temp</div>
+    </div>
+</div>
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
