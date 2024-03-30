@@ -1,3 +1,5 @@
+
+console.log("Js file working");
 var newloc="x"
 let a = document.getElementById("btn");
 a.addEventListener("click", () => {
@@ -30,6 +32,7 @@ async function gettemp(newloc) {
     changeDetails(data);
 }
 function days(n=0) {
+    
     var today = new Date();
 
     // Get the day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
@@ -39,7 +42,7 @@ function days(n=0) {
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     // Get the name of the day using the day of the week
-    return daysOfWeek[dayOfWeek+n];
+    return daysOfWeek[(dayOfWeek+n)%7];
 
 }
 
